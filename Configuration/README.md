@@ -1,9 +1,13 @@
 
-# Linux:
+## Linux:
+
 > export DOTNET_ENVIRONMENT=Development
+
 > export DOTNET_ENVIRONMENT=Production
 
 
-# Windows:
+## Windows:
+
 > set DOTNET_ENVIRONMENT=Development
+
 > set DOTNET_ENVIRONMENT=Production
