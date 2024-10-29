@@ -8,11 +8,6 @@ Console.WriteLine($"Environment: {env.EnvironmentName}");
 
 builder.Services.AddTransient<ExampleService>();
 
-builder.Configuration
-    .AddIniFile("appsettings.ini", optional: true, reloadOnChange: true)
-    .AddIniFile($"appsettings.{env.EnvironmentName}.ini", optional: true, reloadOnChange: true);
-
-
 using IHost host = builder.Build();
 
 var exampleService = host.Services.GetRequiredService<ExampleService>();
